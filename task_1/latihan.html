@@ -1,0 +1,16 @@
+<form id="myform" data-form-type="Registration form" action="/tutorial/action.html">
+    <input type="text" name="firstname" placeholder="First name">
+    <input type="text" name="lastname" placeholder="Last name">
+    
+    <button type="submit">Submit</button>
+  </form>
+  
+  <br/>
+  <button onclick="show();">Show data</button>
+  
+  <script>
+    let show = () => {
+      let element = document.getElementById("myform");
+      alert("Form type = " + element.getAttribute('data-form-type'));
+    }
+  </script>
